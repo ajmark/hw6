@@ -5,10 +5,10 @@
     <title>Hw 6 - Responsive web app</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+    <link rel="stylesheet" href="jquery.mobile-1.2.1.min.css" />
     <!--Javascript -->
-    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+    <script src="jquery-1.8.3.min.js"></script>
+    <script src="jquery.mobile-1.2.1.min.js"></script>
     <script src="main.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
@@ -51,11 +51,11 @@
             </div>
           <div data-role="content">
             <label for="slider-step">Rating Meter:</label>
-            <input type="range" name="slider-step" id="slider-step" value="50" min="0" max="100" step="25" />
+            <input type="range" name="slider-step" id="slider-step1" value="50" min="0" max="100" step="25" />
             <fieldset>
-              <button type="button" onclick="rateCereal()" data-icon="info">Submit my rating!</button>
+              <button type="button" onclick="rateCereal('1')" data-icon="info">Submit my rating!</button>
             </fieldset>
-            <div id="response"><h4>I'll eat this cereal.</h4></div>
+            <div id="response1"><h4>I'll eat this cereal.</h4></div>
           </div>
         </div><!-- /content -->
         <div data-role="content">
@@ -75,11 +75,11 @@
             </div>
             <div data-role="content">
               <label for="slider-step">Rating Meter:</label>
-              <input type="range" name="slider-step" id="slider-step" value="50" min="0" max="100" step="25" />
+              <input type="range" name="slider-step" id="slider-step2" value="50" min="0" max="100" step="25" />
               <fieldset>
-                <button type="button" onclick="rateCereal()" data-icon="info">Submit my rating!</button>
+                <button type="button" onclick="rateCereal('2')" data-icon="info">Submit my rating!</button>
               </fieldset>
-              <div id="response"><h4>I'll eat this cereal.</h4></div>
+              <div id="response2"><h4>I'll eat this cereal.</h4></div>
             </div>
           <a href="#intro" data-role="button" data-icon="arrow-l" data-transition="slide"  data-direction="reverse">Back to other cereals</a>
           <div id="picbox-capncrunch"></div>
