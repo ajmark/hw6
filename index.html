@@ -21,15 +21,17 @@
       <div data-role="page" id="intro">
       
         <div data-role="header">
-          <h1>Cereals</h1>
+          <h1>Cereal Rater</h1>
         </div><!-- /header -->
       
         <div data-role="content"> 
-          <p>Learn about all the kinds of cereal!</p> 
+          <p>Learn about all kinds of cereal and then rate them!</p> 
           <ul data-role="listview" data-inset="true" data-filter="true">
+            <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-b">Healthy</li>
             <li><a href="#cheerios" data-transition="flow">Cheerios</a></li>
-            <li><a href="#capncrunch" data-transition="flow">Cap'n Crunch</a></li>
             <li><a href="honeybunches.html" data-transition="flow">Honey Bunches of Oats</a></li>
+            <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-b">Unhealthy</li>
+            <li><a href="#capncrunch" data-transition="flow">Cap'n Crunch</a></li>
             <li><a href="applejacks.html" data-transition="flow">Apple Jacks</a></li>
             <li><a href="ctcrunch.html" data-transition="flow">Cinnamon Toast Crunch</a></li>
           </ul> 
@@ -47,12 +49,19 @@
                 <h3>About</h3>	
                 <p>Cheerios is a brand of breakfast cereal manufactured by General Mills introduced on May 1, 1941 originally named CheeriOats. The name was changed to Cheerios in 1945 due to a trade name dispute with Quaker Oats. The name fit the "O" shape of the cereal pieces.</p>
             </div>
-          <a href="#intro" data-role="button" data-icon="arrow-l" data-transition="slide"  data-direction="reverse">Back to other cereals</a>
-          <fieldset class="ui-block-a">
-            <button type="button" onclick="displayPicture()" data-icon="info">Click Me!</button>
-          </fieldset>
+          <div data-role="content">
+            <label for="slider-step">Rating Meter:</label>
+            <input type="range" name="slider-step" id="slider-step" value="50" min="0" max="100" step="25" />
+            <fieldset>
+              <button type="button" onclick="rateCereal()" data-icon="info">Submit my rating!</button>
+            </fieldset>
+            <div id="response"><h4>I'll eat this cereal.</h4></div>
+          </div>
           <div id="picbox-cheerios"></div>
         </div><!-- /content -->
+        <div data-role="content">
+          <a href="#intro" data-role="button" data-icon="arrow-l" data-transition="slide"  data-direction="reverse">Back to other cereals</a>
+        </div>
       </div><!-- /page -->
 
       <!--  ----------------- Cap'n Crunch ----------------- -->
