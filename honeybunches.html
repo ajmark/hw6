@@ -8,6 +8,14 @@
        <h3>About</h3>	
 		   <p>Honey Bunches of Oats is a cold cereal by Post Holdings. After three years of development, Honey Bunches of Oats was introduced to markets in 1989. The cereal is made up of three kinds of flakes and oat clusters baked with a hint of honey. It is marketed as a source of whole grain. Other varieties have almonds or fruits added into the mix.</p>
      </div>
+     <div data-role="content">
+       <label for="slider-step">Rating Meter:</label>
+       <input type="range" name="slider-step" id="slider-step" value="50" min="0" max="100" step="25" />
+       <fieldset>
+         <button type="button" onclick="rateCereal()" data-icon="info">Submit my rating!</button>
+       </fieldset>
+       <div id="response"><h4>I'll eat this cereal.</h4></div>
+     </div>
 		<a href="#intro" data-role="button" data-icon="arrow-l" data-transition="slide"  data-direction="reverse">Back to cereals</a>
     <div id="picbox-honeybunches"></div>
 	</div><!-- /content -->

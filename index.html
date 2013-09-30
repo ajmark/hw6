@@ -57,7 +57,6 @@
             </fieldset>
             <div id="response"><h4>I'll eat this cereal.</h4></div>
           </div>
-          <div id="picbox-cheerios"></div>
         </div><!-- /content -->
         <div data-role="content">
           <a href="#intro" data-role="button" data-icon="arrow-l" data-transition="slide"  data-direction="reverse">Back to other cereals</a>
@@ -73,6 +72,14 @@
             <div data-role="collapsible">
               <h3>About</h3>	
               <p>Cap'n Crunch is a product line of sweetened corn and oat breakfast cereals introduced in 1963 and manufactured by Quaker Oats Company, a division of PepsiCo since 2001.</p>
+            </div>
+            <div data-role="content">
+              <label for="slider-step">Rating Meter:</label>
+              <input type="range" name="slider-step" id="slider-step" value="50" min="0" max="100" step="25" />
+              <fieldset>
+                <button type="button" onclick="rateCereal()" data-icon="info">Submit my rating!</button>
+              </fieldset>
+              <div id="response"><h4>I'll eat this cereal.</h4></div>
             </div>
           <a href="#intro" data-role="button" data-icon="arrow-l" data-transition="slide"  data-direction="reverse">Back to other cereals</a>
           <div id="picbox-capncrunch"></div>

@@ -8,6 +8,14 @@
         <h3>About</h3>	
 		    <p>Apple Jacks is a brand of cereal produced by Kellogg's and targeted mainly at children. It was introduced to the U.S. as "Apple O's" in 1965 after being invented by William Thilly, a member of Delta Upsilon Technology Chapter and now a professor at MIT. In 1971 the name "Apple Jacks" was put into action by advertisers. The product is described by Kellogg's as a "crunchy, sweetened multi-grain cereal with apple and cinnamon."</p>
      </div>
+     <div data-role="content">
+       <label for="slider-step">Rating Meter:</label>
+       <input type="range" name="slider-step" id="slider-step" value="50" min="0" max="100" step="25" />
+       <fieldset>
+         <button type="button" onclick="rateCereal()" data-icon="info">Submit my rating!</button>
+       </fieldset>
+       <div id="response"><h4>I'll eat this cereal.</h4></div>
+     </div>
 		<a href="#intro" data-role="button" data-icon="arrow-l" data-transition="slide"  data-direction="reverse">Back to cereals</a>
     <div id="picbox-applejacks"></div>
 	</div><!-- /content -->
