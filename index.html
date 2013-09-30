@@ -3,14 +3,61 @@
   <head>
 
     <title>Hw 6 - Responsive web app</title>
-    <link type="text/css" href="style.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+    <!--Javascript -->
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
   </head>
+    
   <body>
 
     <div class="container">
+      <!--  ----------------- INTRO PAGE ----------------- -->
+      <div data-role="page" id="intro">
+      
+        <div data-role="header">
+          <h1>Cereals</h1>
+        </div><!-- /header -->
+      
+        <div data-role="content"> 
+          <p>Learn about all the kinds of cereal!</p> 
+          <ul data-role="listview" data-inset="true" data-filter="true">
+            <li><a href="#cheerios" data-transition="slidefade">Cheerios</a></li>
+            <li><a href="#capncrunch" data-transition="slide">Cap'n Crunch</a></li>
+            <li><a href="honeybunches.html" data-transition="slide">Honey Bunches of Oats</a></li>
+            <li><a href="applejacks.html" data-transition="slide">Apple Jacks</a></li>
+            <li><a href="ctcrunch.html" data-transition="slide">Cinnamon Toast Crunch</a></li>
+          </ul> 
+        </div><!-- /content -->
+      
+      </div><!-- /page -->
+      
+      <!--  ----------------- Cheerios ----------------- -->
+      <div data-role="page" id="cheerios">
+        <div data-role="header">
+          <h1>Cheerios</h1>
+        </div><!-- /header -->
+        <div data-role="content"> 
+          <p>Cheerios is a brand of breakfast cereal manufactured by General Mills introduced on May 1, 1941 originally named CheeriOats. The name was changed to Cheerios in 1945 due to a trade name dispute with Quaker Oats. The name fit the "O" shape of the cereal pieces.</p>
+          <a href="#intro" data-role="button" data-icon="arrow-l" data-transition="slide"  data-direction="reverse">Back to other cereals</a>
+        </div><!-- /content -->
+      </div><!-- /page -->
 
-
-
+      <!--  ----------------- Cap'n Crunch ----------------- -->
+      <div data-role="page" id="capncrunch">
+        <div data-role="header">
+          <h1>Cap'n Crunch</h1>
+        </div><!-- /header -->
+        <div data-role="content"> 
+          <p>Cap'n Crunch is a product line of sweetened corn and oat breakfast cereals introduced in 1963 and manufactured by Quaker Oats Company, a division of PepsiCo since 2001.</p>
+          <a href="#intro" data-role="button" data-icon="arrow-l" data-transition="slide"  data-direction="reverse">Back to other cereals</a>
+        </div><!-- /content -->
+      </div><!-- /page -->
+        
     </div>
   </body>
 </html>

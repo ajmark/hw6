@@ -1,4 +1,4 @@
-      @import url(//fonts.googleapis.com/css?family=Antic+Slab|Signika:400,700);
+      @import url(//fonts.googleapis.com/css?family=Raleway:400,700,300 rel='stylesheet' type='text/css');
 
       html, body, div, span, applet, object, iframe,
       h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -22,12 +22,12 @@
       }
 
       body {
-        font-family: "Antic Slab", Georgia, Serif;
+        font-family: 'Raleway', sans-serif;
         color: #444;
       }
 
       h1, h3 {
-        font-family: "Signika", Georgia, Serif;
+        font-family: 'Raleway', sans-serif;
       }
 
       h1 {
@@ -36,8 +36,7 @@
         font-size: 2em;
         line-height: 1.4;
         margin-bottom: 0.5em;
-        color: #222;
-        border-bottom: 1px solid #eee;
+        color: whitesmoke;
       }
 
       h3 {
